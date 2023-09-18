@@ -4,7 +4,7 @@
     Console.WriteLine("digite seu saldo:");
     double saldoC = Convert.ToDouble(Console.ReadLine());
 
-    Console.WriteLine("digite um valor:");
+    Console.WriteLine("digite o valor que deseja:");
     double valor = Convert.ToDouble(Console.ReadLine());
 
     Console.WriteLine("CONTA");
