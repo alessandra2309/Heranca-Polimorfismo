@@ -13,3 +13,18 @@ C:\Users\2022102020045\source\repos\Agencia\Agencia\obj\Debug\net6.0\refint\Agen
 C:\Users\2022102020045\source\repos\Agencia\Agencia\obj\Debug\net6.0\Agencia.pdb
 C:\Users\2022102020045\source\repos\Agencia\Agencia\obj\Debug\net6.0\Agencia.genruntimeconfig.cache
 C:\Users\2022102020045\source\repos\Agencia\Agencia\obj\Debug\net6.0\ref\Agencia.dll
+C:\Users\2022102020045\Downloads\Agencia - Copia\Agencia - Copia\Agencia\bin\Debug\net6.0\Agencia.exe
+C:\Users\2022102020045\Downloads\Agencia - Copia\Agencia - Copia\Agencia\bin\Debug\net6.0\Agencia.deps.json
+C:\Users\2022102020045\Downloads\Agencia - Copia\Agencia - Copia\Agencia\bin\Debug\net6.0\Agencia.runtimeconfig.json
+C:\Users\2022102020045\Downloads\Agencia - Copia\Agencia - Copia\Agencia\bin\Debug\net6.0\Agencia.dll
+C:\Users\2022102020045\Downloads\Agencia - Copia\Agencia - Copia\Agencia\bin\Debug\net6.0\Agencia.pdb
+C:\Users\2022102020045\Downloads\Agencia - Copia\Agencia - Copia\Agencia\obj\Debug\net6.0\Agencia.csproj.AssemblyReference.cache
+C:\Users\2022102020045\Downloads\Agencia - Copia\Agencia - Copia\Agencia\obj\Debug\net6.0\Agencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2022102020045\Downloads\Agencia - Copia\Agencia - Copia\Agencia\obj\Debug\net6.0\Agencia.AssemblyInfoInputs.cache
+C:\Users\2022102020045\Downloads\Agencia - Copia\Agencia - Copia\Agencia\obj\Debug\net6.0\Agencia.AssemblyInfo.cs
+C:\Users\2022102020045\Downloads\Agencia - Copia\Agencia - Copia\Agencia\obj\Debug\net6.0\Agencia.csproj.CoreCompileInputs.cache
+C:\Users\2022102020045\Downloads\Agencia - Copia\Agencia - Copia\Agencia\obj\Debug\net6.0\Agencia.dll
+C:\Users\2022102020045\Downloads\Agencia - Copia\Agencia - Copia\Agencia\obj\Debug\net6.0\refint\Agencia.dll
+C:\Users\2022102020045\Downloads\Agencia - Copia\Agencia - Copia\Agencia\obj\Debug\net6.0\Agencia.pdb
+C:\Users\2022102020045\Downloads\Agencia - Copia\Agencia - Copia\Agencia\obj\Debug\net6.0\Agencia.genruntimeconfig.cache
+C:\Users\2022102020045\Downloads\Agencia - Copia\Agencia - Copia\Agencia\obj\Debug\net6.0\ref\Agencia.dll
