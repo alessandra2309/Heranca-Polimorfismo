@@ -1,27 +1,112 @@
-﻿while (true)
+﻿using System.Globalization;
+
+public class progam
 {
-    
-    Console.WriteLine("digite seu saldo:");
-    double saldoC = Convert.ToDouble(Console.ReadLine());
+    static void Main(string[] args)
+    {
+        int NumeroC = 1;
+        string agenncia = "jipa";
+        while (true)
+        {
+            Console.WriteLine("digite \n" + "1 para conta normal,\n"+"2 para conta estudante\n"+"3 para conta empresarial");
+            int opcao = Convert.ToInt32(Console.ReadLine());
 
-    Console.WriteLine("digite o valor que deseja:");
-    double valor = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("digite o nome do titular");
+            string titular = Console.ReadLine();
+            if (opcao == 1 )
+            {
+                Conta c = new Conta(10,"caixa","alessandra");
+                while (true)
+                {
+                    Console.WriteLine("1 para depositar, 2 para sacar e 3 para sair");
+                    opcao = Convert.ToInt32(Console.ReadLine());
 
-    Console.WriteLine("CONTA");
-    Conta c = new Conta(50, "caixa","caixa" ,saldoC,valor);
-    c.Sacar(valor,saldoC);
-    c.Depositar(valor, saldoC);
+                    if(opcao == 1)
+                    {
+                        Console.WriteLine("digite um valor");
+                        double valor = Convert.ToDouble(Console.ReadLine());
+                        c.Depositar(valor);
+                    }
+                    else if(opcao == 2)
+                    {
+                        Console.WriteLine("digite um valor");
+                        double valor = Convert.ToDouble((Console.ReadLine()));
+                        c.Sacar(valor);
+                    }
+                    else if (opcao == 3)
+                    {
+                        break;
+                    }
+                }
+             
+            }
+            if (opcao == 2)
+            {
+                Console.WriteLine("digite o CPF do estudante");
+                string cpf = Console.ReadLine();
 
-    Console.WriteLine("Cempres0a");
-    Cempresa ces = new Cempresa(10, 7000,8000, 01,4000, "1", "caixa",4444, saldoC);
-    ces.FzrEmprestimo(200);
-    ces.Sacar(valor, saldoC);
+                Console.WriteLine("informe a instituição");
+                string instituicao = Console.ReadLine();
+                Cestudante ce = new Cestudante(100,instituicao,cpf,NumeroC,agenncia, titular, 0);
 
-    Console.WriteLine("Cestudante");
-    Cestudante ce = new Cestudante(600, "ifro", "000", 01, "agencia", "caixa", saldoC,valor);
-    ce.Sacar(valor, saldoC);
+                while (true)
+                {
+                    Console.WriteLine("1 para depositar, 2 para sacar e 3 para sair");
+                    opcao = Convert.ToInt32(Console.ReadLine());
 
+                    if (opcao == 1)
+                    {
+                        Console.WriteLine("digite um valor");
+                        double valor = Convert.ToDouble(Console.ReadLine());
+                        ce.Depositar(valor);
+                    }
+                    else if (opcao == 2)
+                    {
+                        Console.WriteLine("digite um valor");
+                        double valor = Convert.ToDouble((Console.ReadLine()));
+                        ce.Sacar(valor);
+                    }
+                    else if (opcao == 3)
+                    {
+                        break;
+                    }
+                }
 
+            }
+            if (opcao == 3)
+            {
+                Cempresa ces = new Cempresa(10, 1000,02,"caixa","alessanda",5000);
+                while (true)
+                {
+                    Console.WriteLine("1 para depositar, 2 para sacar e 3 para sair");
+                    opcao = Convert.ToInt32(Console.ReadLine());
+
+                    if (opcao == 1)
+                    {
+                        Console.WriteLine("digite um valor");
+                        double valor = Convert.ToDouble(Console.ReadLine());
+                        ces.FzrEmprestimo(valor);
+                    }
+                    else if (opcao == 2)
+                    {
+                        Console.WriteLine("digite um valor");
+                        double valor = Convert.ToDouble((Console.ReadLine()));
+                        ces.Sacar(valor);
+                    }
+                    else if (opcao == 3)
+                    {
+                        break;
+                    }
+                }
+
+            }
+
+           
+
+        }
+    }
 }
+
+
 
 

@@ -6,21 +6,21 @@ internal class Cestudante :Conta
     public string Cpf { get; set; }
 
     public Cestudante(double limitechequeespecial, string nomeInstituicao, string cpf,
-        int numeroC, string agenncia, string titular, double saldoC, double valor) : base( numeroC,  agenncia,  titular,  saldoC,  valor)
+        int numeroC, string agenncia, string titular, double saldoC) : base( numeroC,  agenncia,  titular,saldoC)
     {
         this.Limitechequeespecial = limitechequeespecial;
         this.NomeInstituicao = nomeInstituicao;
         this.Cpf = cpf;
     }
-    public void Sacar(double limitechequeespecial,double valor)
+    public override void Sacar(double valor)
     {
-        if(valor > limitechequeespecial)
+        if(valor <= SaldoC + limitechequeespecial)
         {
-            Console.WriteLine("não e possível realizar a transação");
+            SaldoC -= valor;
         }
-        else if(valor < limitechequeespecial)
+        else
         {
-
+            Console.WriteLine("saldo insuficiente!");
         }
     }
 }

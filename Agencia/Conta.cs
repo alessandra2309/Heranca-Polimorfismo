@@ -6,32 +6,47 @@
         public string Titular { get; set; }
         public double SaldoC { get; set; }
 
-   
-    public Conta(int numeroC, string agenncia, string titular, double saldoC, double valor)
+        public Conta(){ }
+
+        public Conta(int numeroC, string agenncia, string titular,double saldoC)
         {
             NumeroC = numeroC;
             Agenncia = agenncia;
             Titular = titular;
             SaldoC = saldoC;
            
+           
         }
 
-        public void Sacar(double valor,double saldoC)
+        public virtual void Sacar(double valor)
         {
             double conta = 0;
-            if(valor < saldoC)
+            if(saldoC >= valor)
             {
                 conta = SaldoC - valor;
+              Console.WriteLine($"seu saldo atual agora é {conta} reais");
             }
-            Console.WriteLine($"seu saldo atual agora é {conta} reais");
+            else
+            {
+               Console.WriteLine("saldo insuficiente");
+            }
+           
+
         }
 
-        public void Depositar(double valor,double saldoC)
+        public void Depositar(double valor)
         {
-           double conta2  = SaldoC + valor;
-               
-            
+           if(valor >= 0)
+           {
+             double conta2 = SaldoC + valor;
             Console.WriteLine($"seu saldo atual agora é {conta2} reais");
+           }
+           else
+           {
+            Console.WriteLine("opção invalida");
+
+           }
+      
         }
     }
 
